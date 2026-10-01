@@ -3,178 +3,267 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Everyline</title>
+<title>Everyline | Fractional CFO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 html,body{width:100%;max-width:100%;overflow-x:hidden}body{margin:0;background:#ffffff;color:#0a0a0a;font-family:'Geist',system-ui,sans-serif}
 a{color:#0a0a0a}a:hover{color:#08801f}
+.ev-tl-v,.ev-tl-v-arrow{display:none !important}
+@media (max-width: 1100px){
+.ev-pad{padding-left:48px !important;padding-right:48px !important}
+.ev-h1{font-size:72px !important}
+.ev-h2{font-size:56px !important}
+.ev-gl-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;row-gap:40px}
+.ev-gl-col{border-left:0 !important;padding:0 32px 0 0 !important}
+.ev-gl-lines{display:none !important}
+.ev-gl-grid{margin-top:40px !important}
+.ev-glance,.ev-hero-copy{grid-column:1 / -1 !important}
+.ev-hero-copy{order:-1}
+.ev-wwd{grid-template-columns:minmax(0,1fr) !important;row-gap:32px !important}
+.ev-card-desc{min-height:0 !important}
+.ev-about-lead{font-size:28px !important}
+.ev-book{grid-template-columns:minmax(0,1fr) !important;row-gap:40px !important}
+.ev-book-copy,.ev-book-cta{grid-column:1 / -1 !important}
+.ev-book-cta{padding-bottom:0 !important}
+}
+@media (max-width: 1200px){
+.ev-tl{grid-template-columns:minmax(0,1fr) !important;row-gap:48px !important}
+.ev-tl-h{display:none !important}
+.ev-stage{position:relative;padding-left:40px}
+.ev-node-row{position:absolute !important;left:0;top:8px}
+.ev-stage-copy{padding-right:0 !important}
+.ev-tl-v{display:block !important}
+.ev-tl-v-arrow{display:block !important}
+}
+@media (max-width: 768px){
+.ev-gl-grid{grid-template-columns:minmax(0,1fr) !important}
+.ev-gl-col{padding:24px 0 0 !important;border-top:1px solid #e2e2dc}
+.ev-gl-col:first-child{border-top:0;padding-top:0 !important}
+.ev-br{display:none}
+.ev-navlink{display:none !important}
+.ev-header{height:80px !important}
+.ev-h1{font-size:52px !important}
+.ev-h2{font-size:44px !important}
+.ev-underline{text-decoration-thickness:4px !important;text-underline-offset:10px !important}
+.ev-footer{flex-direction:column !important;align-items:flex-start !important;gap:24px !important}
+}
+@media (max-width: 480px){
+.ev-pad{padding-left:24px !important;padding-right:24px !important}
+.ev-h1{font-size:40px !important;line-height:1.18 !important}
+.ev-h2{font-size:36px !important}
+.ev-h2-bars{gap:16px !important}
+.ev-h2-bar{width:32px !important}
+.ev-underline{text-decoration-thickness:3px !important;text-underline-offset:8px !important}
+.ev-lead{font-size:18px !important}
+.ev-about-lead{font-size:24px !important}
+.ev-stage-title{font-size:26px !important}
+.ev-wwd-panel{padding:32px 24px !important}
+.ev-wwd-tab-t{font-size:20px !important}
+.ev-wwd-title{font-size:28px !important}
+.ev-header-cta{padding:16px !important;font-size:15px !important;min-height:48px;box-sizing:border-box}
+.ev-footer-links{flex-wrap:wrap;gap:16px 24px !important}
+}
 </style>
 </head>
 <body>
-
 <div style="width: 100%; min-height: 100vh; box-sizing: border-box; background: #ffffff; display: flex; flex-direction: column; font-family: 'Geist', system-ui, sans-serif; color: #0a0a0a">
 
-<header id="top" style="height: 104px; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; background: #ffffff; border-bottom: 1px solid #e6e6e2">
-<a href="#top" aria-label="Everyline home" style="display: flex"><img src="./assets/92653741a168334c42f76c1188abb795.png" alt="Everyline" style="height: 22px; width: auto; display: block"></a>
+<header id="top" class="ev-header ev-pad" style="height: 104px; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: #ffffff; border-bottom: 1px solid #e6e6e2">
+<a href="#top" aria-label="Everyline home" style="display: flex; flex-shrink: 0; padding: 16px 0"><img src="./assets/92653741a168334c42f76c1188abb795.png" alt="Everyline" style="height: 22px; width: auto; display: block"></a>
 <nav style="display: flex; align-items: center; gap: 40px; font-size: 16px">
-<a href="#services" style="text-decoration: none; color: #0a0a0a">Services</a>
-<a href="#how-we-work" style="text-decoration: none; color: #0a0a0a">How We Work</a>
-<a href="#about" style="text-decoration: none; color: #0a0a0a">About</a>
-<a href="https://calendar.app.google/2rFv7g7Xe4Y1aokh6" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #08801f; color: #ffffff; padding: 16px 26px; font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 20px rgba(8,128,31,0.22)">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+<a href="#services" class="ev-navlink" style="text-decoration: none; color: #0a0a0a; padding: 16px 0">Services</a>
+<a href="#how-we-work" class="ev-navlink" style="text-decoration: none; color: #0a0a0a; padding: 16px 0">How We Work</a>
+<a href="#about" class="ev-navlink" style="text-decoration: none; color: #0a0a0a; padding: 16px 0">About</a>
+<a href="https://calendar.app.google/2rFv7g7Xe4Y1aokh6" target="_blank" rel="noopener noreferrer" class="ev-header-cta" style="text-decoration: none; background: #08801f; color: #ffffff; padding: 16px 24px; font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; white-space: nowrap; box-shadow: 0 8px 24px rgba(8,128,31,0.22)">Book a Call <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
 </nav>
 </header>
 
-<section style="padding: 120px 80px 144px; display: flex; flex-direction: column; gap: 80px">
-<h1 style="margin: 0; font-size: 88px; line-height: 1.05; letter-spacing: -0.045em; font-weight: 500"><span style="text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 5px; text-underline-offset: 14px">Senior Finance</span><br><span style="text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 5px; text-underline-offset: 14px">Leadership</span>, <span style="font-weight: 300">Without</span><br><span style="font-weight: 300">the Full-Time Overhead</span></h1>
-<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: center">
-<div style="grid-column: 1 / span 5; background: #ffffff; border: 1px solid #e6e6e2; box-shadow: 0 20px 48px rgba(10,10,10,0.09); display: flex; flex-direction: column">
-<div style="padding: 20px 28px; background: #f4f4f1; border-bottom: 1px solid #e6e6e2; font-size: 16px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase">At a Glance</div>
-<div style="padding: 18px 28px; border-bottom: 1px solid #e6e6e2; display: flex; flex-direction: column; gap: 4px">
-<div style="font-size: 14px; font-weight: 600; color: #0a0a0a">Who We Work With</div>
-<div style="font-size: 16px; line-height: 1.5; color: #3a3a3a">Founder-led and privately held companies across all industries</div>
+<section class="ev-pad" style="padding: 120px 80px 344px; display: flex; flex-direction: column">
+<h1 class="ev-h1" style="margin: 0; font-size: 88px; line-height: 1.12; letter-spacing: -0.045em; font-weight: 500"><span class="ev-underline" style="text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 5px; text-underline-offset: 14px">Senior Finance</span><br><span class="ev-underline" style="text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 5px; text-underline-offset: 14px">Leadership</span>, <span style="font-weight: 300">Without</span><br><span style="font-weight: 300">the Full-Time Overhead</span></h1>
+<div style="margin-top: 48px; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; max-width: 960px">
+<p class="ev-lead" style="margin: 0; font-size: 20px; line-height: 1.6; color: #3a3a3a"><img src="./assets/ff1cadbac95d2f5778c4c1052e5dabe1.png" alt="Everyline" style="display: inline-block; height: 0.905em; width: auto; vertical-align: -0.195em; margin: 0 0.04em 0 0"> is a fractional CFO firm that advises &amp; executes on the financial workstreams<br class="ev-br"> that provide the most value for your company, <strong style="font-weight: 600; color: #0a0a0a">for a fraction of the cost</strong>.</p>
+<a href="https://calendar.app.google/2rFv7g7Xe4Y1aokh6" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #08801f; color: #ffffff; padding: 16px 24px; font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(8,128,31,0.22)">Book a Call <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
 </div>
-<div style="padding: 18px 28px; display: flex; flex-direction: column; gap: 4px">
-<div style="font-size: 14px; font-weight: 600; color: #0a0a0a">How We Fit In</div>
-<div style="font-size: 16px; line-height: 1.5; color: #3a3a3a">Alongside your existing bookkeeper or accounting firm</div>
+<div class="ev-glance" style="margin-top: 344px; display: flex; flex-direction: column">
+<div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap"><img src="./assets/1a75d9ed041b9a1794aeb40375161bb3.png" alt="Everyline" style="height: 28px; width: auto; display: block"><span style="font-size: 28px; line-height: 1; font-weight: 200; color: #0a0a0a; text-transform: uppercase; transform: translateY(-2px)">At a Glance</span></div>
+<div class="ev-gl-lines" aria-hidden="true" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 16px">
+<div style="height: 1px; background: #e2e2dc; margin-right: 12px"></div>
+<div style="height: 1px; background: #e2e2dc; margin: 0 12px"></div>
+<div style="height: 1px; background: #e2e2dc; margin: 0 12px"></div>
+<div style="height: 1px; background: #e2e2dc; margin-left: 12px"></div>
+</div>
+<div class="ev-gl-grid" style="margin-top: 24px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr))">
+<div class="ev-gl-col" style="padding: 0 32px 0 0; display: grid; grid-row: span 2; grid-template-rows: subgrid; row-gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">Who We Work With</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a">SMBs and startups with approximately $500K to $35M in annual revenue</p>
+</div>
+<div class="ev-gl-col" style="border-left: 1px solid #e2e2dc; padding: 0 32px; display: grid; grid-row: span 2; grid-template-rows: subgrid; row-gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">When We’re Most Useful</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a">Supporting companies that need CFO-level insight and execution to turn financial data into key operating decisions, without taking on the cost of a full-time finance executive</p>
+</div>
+<div class="ev-gl-col" style="border-left: 1px solid #e2e2dc; padding: 0 32px; display: grid; grid-row: span 2; grid-template-rows: subgrid; row-gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">How We Fit In</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a">Alongside an existing bookkeeper, accounting team, or outside accounting firm</p>
+</div>
+<div class="ev-gl-col" style="border-left: 1px solid #e2e2dc; padding: 0 0 0 32px; display: grid; grid-row: span 2; grid-template-rows: subgrid; row-gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">How Involved We Are</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a">As involved as we need to be depending on your goals, priorities, and level of support required</p>
 </div>
 </div>
-<div style="grid-column: 7 / span 6; display: flex; flex-direction: column; gap: 36px">
-<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #3a3a3a">Everyline is a <strong style="font-weight: 600; color: #0a0a0a">fractional CFO practice</strong>. We give founder-led and privately held companies the planning, reporting, and transaction experience of a seasoned CFO, for a fraction of the time and cost of a full-time hire.</p>
-<div style="display: flex">
-<a href="https://calendar.app.google/2rFv7g7Xe4Y1aokh6" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #08801f; color: #ffffff; padding: 16px 26px; font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 20px rgba(8,128,31,0.22)">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
-</div>
+<div class="ev-gl-lines" aria-hidden="true" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 24px">
+<div style="height: 1px; background: #e2e2dc; margin-right: 12px"></div>
+<div style="height: 1px; background: #e2e2dc; margin: 0 12px"></div>
+<div style="height: 1px; background: #e2e2dc; margin: 0 12px"></div>
+<div style="height: 1px; background: #e2e2dc; margin-left: 12px"></div>
 </div>
 </div>
 </section>
 
-<section id="services" style="padding: 0 80px; display: flex; flex-direction: column; gap: 64px">
+<section id="services" class="ev-pad" style="padding: 0 80px; display: flex; flex-direction: column; gap: 64px">
 <div style="display: flex; flex-direction: column; gap: 24px; max-width: 640px">
-<h2 style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">What We Do</h2>
+<h2 class="ev-h2" style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">What We Do</h2>
 <div style="width: 56px; height: 4px; background: #0ba32d"></div>
-<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #3a3a3a">The thinking side of finance: <strong style="font-weight: 600; color: #0a0a0a">planning, reporting, and transactions</strong>, delivered part-time by someone who has sat on both sides of the table.</p>
+<p class="ev-lead" style="margin: 0; font-size: 20px; line-height: 1.6; color: #3a3a3a">We manage all finance workstreams and turn raw data into actionable insights so that you can go from working <em>in</em> your business back to working <strong style="font-weight: 700; color: #0a0a0a">on</strong> your business.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch">
-<div style="background: #ffffff; border: 1px solid #e6e6e2; border-top: 7px solid #0ba32d; box-shadow: 0 20px 48px rgba(10,10,10,0.09); display: flex; flex-direction: column">
-<div style="background: #0a0a0a; padding: 16px 24px">
-<h3 style="margin: 0; font-size: 24px; line-height: 1.25; font-weight: 600; letter-spacing: -0.015em; color: #ffffff">Planning &amp; Forecasting</h3>
+<div class="ev-wwd" style="display: grid; grid-template-columns: 400px minmax(0, 1fr); gap: 48px; align-items: stretch">
+<div role="group" aria-label="Services" style="display: flex; flex-direction: column; border-top: 2px solid #0a0a0a">
+<button type="button" class="ev-tab" data-tab="0" aria-pressed="true" aria-controls="wwd-panel" style="width: 100%; text-align: left; font-family: inherit; border: 0; border-bottom: 1px solid #e2e2dc; padding: 32px 24px; min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; background: #0ba32d; color: #ffffff;"><span class="ev-wwd-tab-t" style="font-size: 24px; font-weight: 600; letter-spacing: -0.015em">Planning &amp; Forecasting</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+<button type="button" class="ev-tab" data-tab="1" aria-pressed="false" aria-controls="wwd-panel" style="width: 100%; text-align: left; font-family: inherit; border: 0; border-bottom: 1px solid #e2e2dc; padding: 32px 24px; min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; background: #ffffff; color: #0a0a0a;"><span class="ev-wwd-tab-t" style="font-size: 24px; font-weight: 600; letter-spacing: -0.015em">Reporting &amp; Analysis</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+<button type="button" class="ev-tab" data-tab="2" aria-pressed="false" aria-controls="wwd-panel" style="width: 100%; text-align: left; font-family: inherit; border: 0; border-bottom: 1px solid #e2e2dc; padding: 32px 24px; min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; background: #ffffff; color: #0a0a0a;"><span class="ev-wwd-tab-t" style="font-size: 24px; font-weight: 600; letter-spacing: -0.015em">Transaction Advisory</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="2" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
 </div>
-<div style="background: #f4f4f1; border: 1px solid #e2e2dc; border-radius: 6px; margin: 24px 24px 0; padding: 20px 22px">
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a; min-height: 77px">Budgets, forecasts, and operating plans tied to how the business actually runs, including where the cash goes.</p>
-</div>
-<ul style="margin: 0; list-style: none; padding: 24px 24px 28px; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.5; color: #1a1a1a">
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Annual Operating Plan</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Rolling Forecast</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Cash Forecasting</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Scenario Models</span></li>
-</ul>
-</div>
-<div style="background: #ffffff; border: 1px solid #e6e6e2; border-top: 7px solid #0ba32d; box-shadow: 0 20px 48px rgba(10,10,10,0.09); display: flex; flex-direction: column">
-<div style="background: #0a0a0a; padding: 16px 24px">
-<h3 style="margin: 0; font-size: 24px; line-height: 1.25; font-weight: 600; letter-spacing: -0.015em; color: #ffffff">Reporting &amp; Metrics</h3>
-</div>
-<div style="background: #f4f4f1; border: 1px solid #e2e2dc; border-radius: 6px; margin: 24px 24px 0; padding: 20px 22px">
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a; min-height: 77px">A monthly view of performance and the few metrics that matter to leadership and the board.</p>
-</div>
-<ul style="margin: 0; list-style: none; padding: 24px 24px 28px; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.5; color: #1a1a1a">
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Monthly Reporting Package</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Custom KPI Creation &amp; Tracking</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Board Material Preparation</span></li>
-</ul>
-</div>
-<div style="background: #ffffff; border: 1px solid #e6e6e2; border-top: 7px solid #0ba32d; box-shadow: 0 20px 48px rgba(10,10,10,0.09); display: flex; flex-direction: column">
-<div style="background: #0a0a0a; padding: 16px 24px">
-<h3 style="margin: 0; font-size: 24px; line-height: 1.25; font-weight: 600; letter-spacing: -0.015em; color: #ffffff">Transaction Advisory</h3>
-</div>
-<div style="background: #f4f4f1; border: 1px solid #e2e2dc; border-radius: 6px; margin: 24px 24px 0; padding: 20px 22px">
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3a3a3a; min-height: 77px">Support for M&amp;A and capital raises, from early analysis and preparation through diligence and close.</p>
-</div>
-<ul style="margin: 0; list-style: none; padding: 24px 24px 28px; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.5; color: #1a1a1a">
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>M&amp;A Analysis &amp; Support</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Fundraising &amp; Lender Preparation</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Investor &amp; Buyer Diligence</span></li>
-<li style="display: flex; align-items: flex-start; gap: 12px"><span aria-hidden="true" style="flex-shrink: 0; width: 6px; height: 6px; margin-top: 9px; background: #0ba32d"></span><span>Deal Process Support</span></li>
-</ul>
+<div id="wwd-panel" aria-live="polite" class="ev-wwd-panel" style="background: #ffffff; border: 1px solid #e6e6e2; box-shadow: 0 24px 48px rgba(10,10,10,0.09); padding: 48px; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto 1fr; row-gap: 24px">
+<div class="ev-panel" data-panel="0" aria-hidden="false" style="grid-column: 1; grid-row: 1 / 5; display: grid; grid-template-rows: subgrid; row-gap: 24px; align-items: start; visibility: visible;"><h3 class="ev-wwd-title" style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em">Planning &amp; Forecasting</h3><div aria-hidden="true" style="width: 40px; height: 4px; background: #0ba32d"></div><p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3a3a3a; max-width: 720px">Budgets, forecasts, and operating plans custom built to reflect how the business actually runs.</p><div style="display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; padding-top: 16px"><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Financial Operating Model</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Rolling Forecast</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Cash Flow Forecast</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Scenario Models</span></div></div>
+<div class="ev-panel" data-panel="1" aria-hidden="true" style="grid-column: 1; grid-row: 1 / 5; display: grid; grid-template-rows: subgrid; row-gap: 24px; align-items: start; visibility: hidden;"><h3 class="ev-wwd-title" style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em">Reporting &amp; Analysis</h3><div aria-hidden="true" style="width: 40px; height: 4px; background: #0ba32d"></div><p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3a3a3a; max-width: 720px">A monthly view of performance and the few metrics that matter to leadership and the board.</p><div style="display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; padding-top: 16px"><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Monthly Reporting Package</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Custom KPI Creation &amp; Tracking</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Investor / Board Materials</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">One-off Analysis</span></div></div>
+<div class="ev-panel" data-panel="2" aria-hidden="true" style="grid-column: 1; grid-row: 1 / 5; display: grid; grid-template-rows: subgrid; row-gap: 24px; align-items: start; visibility: hidden;"><h3 class="ev-wwd-title" style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em">Transaction Advisory</h3><div aria-hidden="true" style="width: 40px; height: 4px; background: #0ba32d"></div><p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3a3a3a; max-width: 720px">Support for M&amp;A and capital raises, from early analysis and preparation through diligence and close.</p><div style="display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; padding-top: 16px"><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">M&amp;A Analysis &amp; Support</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Fundraising &amp; Lender Preparation</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Investor &amp; Buyer Diligence</span><span style="border: 1px solid #d6d6d2; background: #f4f4f1; padding: 8px 16px; font-size: 15px; line-height: 1.4; color: #1a1a1a">Deal Process Support</span></div></div>
 </div>
 </div>
 </section>
 
-<section id="how-we-work" style="margin-top: 144px; background: #0a0a0a; color: #ffffff; padding: 144px 80px; display: flex; flex-direction: column; gap: 80px">
-<div style="display: flex; flex-direction: column; gap: 24px; max-width: 640px">
-<h2 style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">How We Work</h2>
+</section>
+
+<section id="how-we-work" class="ev-pad" style="margin-top: 344px; background: #0a0a0a; color: #ffffff; padding: 144px 80px; display: flex; flex-direction: column; gap: 80px">
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 960px">
+<h2 class="ev-h2" style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">How We Work</h2>
 <div style="width: 56px; height: 4px; background: #0ba32d"></div>
-<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #c8c8c8">It starts with a conversation and grows into a <strong style="font-weight: 600; color: #ffffff">steady working relationship</strong> with your leadership team.</p>
+<p class="ev-lead" style="margin: 0; font-size: 20px; line-height: 1.6; color: #c8c8c8"><strong style="font-weight: 600; color: #ffffff">Every engagement follows the same foundation:</strong></p>
 </div>
-<div style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
-<svg aria-hidden="true" viewBox="0 0 1200 16" preserveAspectRatio="none" style="position: absolute; left: 0; top: 0; width: 100%; height: 16px; display: block; z-index: 0"><path d="M0.0 8h2.0 M5.0 8h2.2 M10.3 8h2.5 M16.0 8h2.8 M22.1 8h3.1 M28.6 8h3.5 M35.6 8h3.9 M43.2 8h4.4 M51.3 8h5.0 M60.0 8h5.5 M69.5 8h6.2 M79.7 8h7.0 M90.8 8h7.8 M102.9 8h8.7 M116.0 8h9.8 M130.4 8h10.9 M146.0 8h12.0 M162.8 8h12.0 M179.7 8h12.0 M196.7 8h12.0 M213.7 8h12.0 M230.7 8h12.0 M247.7 8h12.0 M264.7 8h12.0 M281.7 8h12.0 M298.7 8h12.0 M315.7 8h12.0 M332.7 8h12.0 M349.7 8h12.0 M366.7 8h12.0 M383.7 8h12.0 M400.7 8h12.0 M417.7 8h14.2 M436.3 8h16.7 M456.9 8h19.7 M480.0 8h23.3 M506.3 8h27.5 M536.4 8h32.4 M571.1 8h38.2 M611.4 8h45.1 M658.3 8h53.2 M713.1 8H800.0 M800.0 8H1188.0" stroke="#5a5a5a" stroke-width="2" fill="none"></path><path d="M1188 2l7 6-7 6" stroke="#5a5a5a" stroke-width="2" fill="none"></path></svg>
-<div style="display: flex; flex-direction: column; gap: 36px">
-<div style="position: relative; height: 16px">
+<div class="ev-tl" style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
+<svg class="ev-tl-h" aria-hidden="true" viewBox="0 0 1200 16" preserveAspectRatio="none" style="position: absolute; left: 0; top: 0; width: calc(100% - 10px); height: 16px; display: block"><path d="M0.0 8h2.0 M9.0 8h2.0 M18.0 8h2.0 M27.0 8h2.1 M36.0 8h2.2 M45.0 8h2.2 M54.1 8h2.3 M63.2 8h2.5 M72.4 8h2.6 M81.7 8h2.7 M91.2 8h2.9 M100.7 8h3.1 M110.4 8h3.2 M120.2 8h3.5 M130.2 8h3.7 M140.4 8h3.9 M150.8 8h4.2 M161.4 8h4.5 M172.3 8h4.8 M183.4 8h5.1 M194.8 8h5.5 M206.5 8h5.8 M218.6 8h6.3 M231.0 8h6.7 M243.9 8h7.2 M257.2 8h7.7 M270.9 8h8.3 M285.1 8h8.9 M300.0 8h9.5 M315.4 8h10.2 M331.4 8h11.0 M348.2 8h11.8 M365.7 8h12.8 M384.1 8h13.7 M403.4 8h14.8 M423.7 8h16.0 M445.1 8h17.3 M467.8 8h18.7 M491.8 8h20.3 M517.3 8h22.1 M544.4 8h24.0 M573.4 8h26.2 M604.4 8h28.6 M637.7 8h31.3 M673.5 8h34.3 M712.3 8h37.7 M754.3 8h41.6 M800.0 8H1200" stroke="#5a5a5a" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></path></svg>
+<svg class="ev-tl-h" aria-hidden="true" width="12" height="16" viewBox="0 0 12 16" style="position: absolute; right: 0; top: 0; display: block"><path d="M3 2l7 6-7 6" stroke="#5a5a5a" stroke-width="2" fill="none"></path></svg>
+<div class="ev-stage" style="display: flex; flex-direction: column; gap: 40px">
+<div class="ev-tl-v" aria-hidden="true" style="position: absolute; left: 7px; top: 32px; bottom: -48px; width: 2px"><svg aria-hidden="true" viewBox="0 0 2 240" preserveAspectRatio="none" style="display: block; width: 2px; height: 100%"><path d="M1 0.0v2.0 M1 8.0v2.1 M1 16.0v2.2 M1 24.2v2.3 M1 32.4v2.4 M1 40.7v2.6 M1 49.1v2.8 M1 57.6v2.9 M1 66.3v3.1 M1 75.2v3.3 M1 84.2v3.5 M1 93.4v3.8 M1 102.8v4.0 M1 112.3v4.2 M1 122.1v4.5 M1 132.1v4.8 M1 142.3v5.0 M1 152.7v5.3 M1 163.4v5.6 M1 174.4v6.0 M1 185.6v6.3 M1 197.2v6.6 M1 209.0v7.0 M1 221.1v7.4 M1 233.6v6.4" stroke="#5a5a5a" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></path></svg></div>
+<div class="ev-node-row" style="position: relative; height: 16px">
 <div aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; background: #0ba32d; z-index: 1"></div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-right: 56px">
-<h3 style="margin: 0 0 8px; font-size: 30px; font-weight: 600; letter-spacing: -0.02em; text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 3px; text-underline-offset: 10px">Intro Call</h3>
-<div style="font-size: 18px; font-weight: 500; font-style: italic; line-height: 1.5; color: #ffffff">A clear read on fit and priorities</div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #c8c8c8">Where the company is today and what it needs from finance next.</p>
+<div class="ev-stage-copy" style="display: flex; flex-direction: column; gap: 16px; padding-right: 56px">
+<h3 class="ev-stage-title" style="margin: 0; font-size: 30px; font-weight: 600; letter-spacing: -0.02em">Intro Call</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #c8c8c8">Discuss where the business is at today, where the business needs to be, and how to use finance to help achieve company goals.</p>
 </div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 36px">
-<div style="position: relative; height: 16px">
+<div class="ev-stage" style="display: flex; flex-direction: column; gap: 40px">
+<div class="ev-tl-v" aria-hidden="true" style="position: absolute; left: 7px; top: 32px; bottom: -48px; width: 2px"><svg aria-hidden="true" viewBox="0 0 2 240" preserveAspectRatio="none" style="display: block; width: 2px; height: 100%"><path d="M1 0.0v10.0 M1 15.0v10.7 M1 30.6v11.6 M1 47.1v12.9 M1 64.8v14.4 M1 83.9v16.1 M1 104.7v18.2 M1 127.4v20.5 M1 152.4v23.3 M1 180.1v26.5 M1 210.9v29.1" stroke="#5a5a5a" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></path></svg></div>
+<div class="ev-node-row" style="position: relative; height: 16px">
 <div aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; background: #0ba32d; z-index: 1"></div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-right: 56px">
-<h3 style="margin: 0 0 8px; font-size: 30px; font-weight: 600; letter-spacing: -0.02em; text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 3px; text-underline-offset: 10px">Written Scope</h3>
-<div style="font-size: 18px; font-weight: 500; font-style: italic; line-height: 1.5; color: #ffffff">A proposal you can hold us to</div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #c8c8c8">Priorities, cadence, and what is and is not included, agreed up front.</p>
+<div class="ev-stage-copy" style="display: flex; flex-direction: column; gap: 16px; padding-right: 56px">
+<h3 class="ev-stage-title" style="margin: 0; font-size: 30px; font-weight: 600; letter-spacing: -0.02em">Written Scope</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #c8c8c8">A custom scope tailored to specific company priorities that details deliverables, meeting cadence, and rate.</p>
 </div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 36px">
-<div style="position: relative; height: 16px">
+<div class="ev-stage" style="display: flex; flex-direction: column; gap: 40px">
+<div class="ev-tl-v" aria-hidden="true" style="position: absolute; left: 7px; top: 32px; bottom: 16px; width: 2px"><svg aria-hidden="true" viewBox="0 0 2 200" preserveAspectRatio="none" style="display: block; width: 2px; height: 100%"><path d="M1 0V200" stroke="#5a5a5a" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></path></svg></div>
+<svg class="ev-tl-v-arrow" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" style="position: absolute; left: 0; bottom: 0"><path d="M2 5l6 7 6-7" stroke="#5a5a5a" stroke-width="2" fill="none"></path></svg>
+<div class="ev-node-row" style="position: relative; height: 16px">
 <div aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; background: #0ba32d; z-index: 1"></div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-right: 56px">
-<h3 style="margin: 0 0 8px; font-size: 30px; font-weight: 600; letter-spacing: -0.02em; text-decoration: underline; text-decoration-color: #0ba32d; text-decoration-thickness: 3px; text-underline-offset: 10px">Ongoing Engagement</h3>
-<div style="font-size: 18px; font-weight: 500; font-style: italic; line-height: 1.5; color: #ffffff">A finance function you can rely on</div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #c8c8c8">A regular rhythm with leadership that adjusts as the company's needs change.</p>
+<div class="ev-stage-copy" style="display: flex; flex-direction: column; gap: 16px; padding-right: 56px">
+<h3 class="ev-stage-title" style="margin: 0; font-size: 30px; font-weight: 600; letter-spacing: -0.02em">Ongoing Engagement</h3>
+<div aria-hidden="true" style="width: 32px; height: 3px; background: #0ba32d"></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #c8c8c8">A regular rhythm with leadership that adjusts as the company’s needs change and never stops asking “what’s next.”</p>
 </div>
 </div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 960px">
+<p class="ev-lead" style="margin: 0; font-size: 20px; line-height: 1.6; color: #c8c8c8"><strong style="font-weight: 600; color: #ffffff">…but that’s where the similarities end.</strong></p>
+<p class="ev-lead" style="margin: 0; font-size: 20px; line-height: 1.6; color: #c8c8c8">No two businesses operate the same or have the same needs, so each engagement is built to reflect exactly what the company actually requires. Nothing more, nothing less.</p>
 </div>
 </section>
 
-<section id="about" style="padding: 144px 80px 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
-<h2 style="margin: 0; display: flex; align-items: center; gap: 32px; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500"><span aria-hidden="true" style="width: 56px; height: 4px; background: #0ba32d"></span>Who We Are<span aria-hidden="true" style="width: 56px; height: 4px; background: #0ba32d"></span></h2>
-<p style="margin: 24px 0 0; max-width: 1000px; font-size: 34px; line-height: 1.38; letter-spacing: -0.02em; font-weight: 300; color: #1a1a1a">Everyline was founded by <strong style="font-weight: 600; color: #0a0a0a">Joe Betesh</strong>, whose background spans corporate development at a large enterprise software company, technology investment banking, and fractional CFO work across industries.</p>
-<p style="margin: 0; max-width: 760px; font-size: 20px; line-height: 1.6; color: #3a3a3a">Two years as a fractional CFO before founding Everyline, with experience on both the in-house and advisory sides of M&amp;A.</p>
-<div style="margin-top: 16px; display: flex; align-items: center; gap: 14px; text-align: left">
-<img src="./assets/317d2ef0ca7b4d6034089e164a6589d4.png" alt="" style="width: 40px; height: 40px; display: block">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<div style="font-size: 16px; font-weight: 600">Joe Betesh</div>
-<div style="font-size: 14px; color: #595959">Founder, Everyline</div>
+<section id="about" class="ev-pad" style="padding: 344px 80px 0; display: flex; flex-direction: column; align-items: flex-start; text-align: left; gap: 24px">
+<h2 class="ev-h2" style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">Who We Are</h2>
+<div style="width: 56px; height: 4px; background: #0ba32d"></div>
+<p class="ev-about-lead" style="margin: 24px 0 0; max-width: 1000px; font-size: 34px; line-height: 1.38; letter-spacing: -0.02em; font-weight: 300; color: #1a1a1a"><img src="./assets/ff1cadbac95d2f5778c4c1052e5dabe1.png" alt="Everyline" style="display: inline-block; height: 0.905em; width: auto; vertical-align: -0.195em; margin: 0 0.04em 0 0"> is built on <strong style="font-weight: 600; color: #0a0a0a">firsthand experience as a fractional CFO</strong> and prior roles in investment banking and corporate finance.</p>
+<p class="ev-about-lead" style="margin: 0; max-width: 1000px; font-size: 34px; line-height: 1.38; letter-spacing: -0.02em; font-weight: 300; color: #1a1a1a">The focus is straightforward and practical: clear financial insight, rigorous analysis, and hands-on execution that drives value by turning finance from a <em>cost center</em> into a <strong style="font-weight: 600; color: #0a0a0a">profit center</strong>.</p>
+<div style="margin-top: 24px; display: flex; align-items: center; gap: 16px">
+<img src="./assets/317d2ef0ca7b4d6034089e164a6589d4.png" alt="" style="width: 56px; height: 56px; display: block">
+<div style="display: flex; flex-direction: column; gap: 0">
+<div style="font-size: 20px; font-weight: 600">Joe Betesh</div>
+<div style="font-size: 16px; color: #595959">Founder, <img src="./assets/ff1cadbac95d2f5778c4c1052e5dabe1.png" alt="Everyline" style="display: inline-block; height: 0.905em; width: auto; vertical-align: -0.195em; margin: 0 0.04em 0 0"></div>
 </div>
 </div>
 </section>
 
 <div style="flex-grow: 1"></div>
 
-<section id="book" style="margin-top: 144px; background: #f4f4f1; border-top: 1px solid #e6e6e2; padding: 112px 80px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: end">
-<div style="grid-column: 1 / span 8; display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">Start with a Conversation</h2>
-<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #3a3a3a; max-width: 560px">A short introductory conversation to see whether there is a fit. <strong style="font-weight: 600; color: #0a0a0a">No preparation needed.</strong></p>
+<section id="book" class="ev-pad ev-book" style="margin-top: 208px; background: #f4f4f1; border-top: 1px solid #e6e6e2; padding: 112px 80px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: end">
+<div class="ev-book-copy" style="grid-column: 1 / span 8; display: flex; flex-direction: column; gap: 24px">
+<h2 class="ev-h2" style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500">Ready to Unlock More Value out of Your Finance Function?</h2>
+<p class="ev-about-lead" style="margin: 0; max-width: 800px; font-size: 34px; line-height: 1.38; letter-spacing: -0.02em; font-weight: 300; color: #1a1a1a">Schedule a short introductory call today. <strong style="font-weight: 600; color: #0a0a0a">No preparation needed.</strong></p>
 </div>
-<div style="grid-column: 9 / span 4; display: flex; justify-content: flex-start; padding-bottom: 24px">
-<a href="https://calendar.app.google/2rFv7g7Xe4Y1aokh6" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #08801f; color: #ffffff; padding: 22px 36px; font-size: 19px; font-weight: 600; display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 20px rgba(8,128,31,0.22)">Book a Call <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+<div class="ev-book-cta" style="grid-column: 9 / span 4; display: flex; justify-content: flex-start; padding-bottom: 24px">
+<a href="https://calendar.app.google/2rFv7g7Xe4Y1aokh6" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #08801f; color: #ffffff; padding: 24px 40px; font-size: 19px; font-weight: 600; display: flex; align-items: center; gap: 16px; box-shadow: 0 8px 24px rgba(8,128,31,0.22)">Book a Call <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
 </div>
 </section>
 
-<footer style="background: #0a0a0a; padding: 44px 80px 52px; display: flex; align-items: center; justify-content: space-between; font-size: 15px; color: #a3a3a3">
+<footer class="ev-pad ev-footer" style="background: #0a0a0a; padding: 32px 80px 40px; display: flex; align-items: center; justify-content: space-between; font-size: 15px; color: #a3a3a3">
 <img src="./assets/3358667cf1a51881e00a7e902b924039.png" alt="Everyline" style="height: 18px; width: auto; display: block">
-<div style="display: flex; gap: 32px">
-<a href="mailto:hello@everyline.io" style="color: #e0e0e0; text-decoration: none">hello@everyline.io</a>
-<a href="https://www.linkedin.com/company/everyline" target="_blank" rel="noopener noreferrer" style="color: #e0e0e0; text-decoration: none">LinkedIn</a>
+<div class="ev-footer-links" style="display: flex; align-items: center; gap: 32px">
+<a href="mailto:hello@everyline.io" style="color: #e0e0e0; text-decoration: none; padding: 16px 0">hello@everyline.io</a>
+<a href="https://www.linkedin.com/company/everyline" target="_blank" rel="noopener noreferrer" style="color: #e0e0e0; text-decoration: none; padding: 16px 0">LinkedIn</a>
 <span>© 2026 Everyline</span>
 </div>
 </footer>
 
 </div>
+
+<script>
+(function(){
+  var base='width: 100%; text-align: left; font-family: inherit; border: 0; border-bottom: 1px solid #e2e2dc; padding: 32px 24px; min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;';
+  var pbase='grid-column: 1; grid-row: 1 / 5; display: grid; grid-template-rows: subgrid; row-gap: 24px; align-items: start;';
+  function activate(i){
+    document.querySelectorAll('.ev-tab').forEach(function(btn){
+      var on = Number(btn.getAttribute('data-tab')) === i;
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.style.cssText = base + (on ? ' background: #0ba32d; color: #ffffff;' : ' background: #ffffff; color: #0a0a0a;');
+      var svg = btn.querySelector('svg');
+      if (svg) svg.setAttribute('stroke', on ? '#ffffff' : '#9a9a9a');
+    });
+    document.querySelectorAll('.ev-panel').forEach(function(panel){
+      var on = Number(panel.getAttribute('data-panel')) === i;
+      panel.setAttribute('aria-hidden', on ? 'false' : 'true');
+      panel.style.cssText = pbase + (on ? ' visibility: visible;' : ' visibility: hidden;');
+    });
+  }
+  document.querySelectorAll('.ev-tab').forEach(function(btn){
+    btn.addEventListener('click', function(){ activate(Number(btn.getAttribute('data-tab'))); });
+  });
+})();
+</script>
 
 </body>
 </html>
